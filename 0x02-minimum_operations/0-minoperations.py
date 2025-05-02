@@ -1,4 +1,4 @@
-#!/usr/bin/phython3
+#!/usr/bin/python3
 """
 method to calculate the min number of operations to achieve n 'H' characters
 """
