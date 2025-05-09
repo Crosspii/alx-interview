@@ -6,11 +6,11 @@ import sys
 
 def log(status, file_size):
     """
-    log the status and file size from stdin
+     Log the status and file size.
 
     Args:
-        status : a dictionary containing status codes and their counts.
-        file_size : the size of the file to be logged.
+        status (dict): A dictionary containing status codes and their counts.
+        file_size (int): The size of the file to be logged.
     """
     print("File size: {}".format(file_size))
     for key, val in sorted(status.items()):
@@ -35,5 +35,6 @@ try:
             if counter == 10:
                 log(status, file_size)
                 counter = 0
+
 finally:
     log(status, file_size)
