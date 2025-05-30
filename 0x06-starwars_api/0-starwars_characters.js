@@ -23,10 +23,12 @@ async function fetchCharacters() {
         console.log(character.name);
       } catch (err) {
         console.log('Error fetching character:', err.message);
+        process.exit(1);
       }
     }
   } catch (err) {
     console.log('Error fetching movie:', err.message);
+    process.exit(1);
   }
 }
 
