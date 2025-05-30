@@ -10,7 +10,7 @@ if (args.length !== 1) {
 
 const movieUrl = 'https://swapi-api.alx-tools.com/api/films/' + args[0];
 
-async function fetchCharacters() {
+async function fetchCharacters () {
   try {
     const movieData = await request(movieUrl);
     const movie = JSON.parse(movieData);
