@@ -4,6 +4,8 @@
 
 def makeChange(coins, total):
     """Determine the fewest number of coins needed to make a given amount."""
+    if total <= 0:
+        return 0
     dp = [total + 1] * (total + 1)
     dp[0] = 0
 
