@@ -15,4 +15,3 @@ def makeChange(coins, total):
                 dp[a] = min(dp[a], 1 + dp[a - coin])
 
     return dp[total] if dp[total] != total + 1 else -1
-
