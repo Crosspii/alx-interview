@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module to determine the winner of the Prime Game."""
 
+
 def isWinner(x, nums):
     """
     Determines the winner of the Prime Game.
